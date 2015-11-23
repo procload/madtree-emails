@@ -16,7 +16,7 @@
       -ms-text-size-adjust:100%;
       margin:0;
       padding:0;
-      background:#fff;
+      background-color: #333;
       font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size:14px;
     }
@@ -32,7 +32,7 @@
     a img { border:none; }
 
     a {
-      color:#666;
+      color: #DA220B;
       text-decoration:none;
     }
 
@@ -41,13 +41,13 @@
       font-size: 28px;
       text-align: center;
       margin: 0 0 10px;
-      color:#666;
+      color: #fff;
       line-height:1.25em;
       text-transform: uppercase;
     }
 
     h1 a {
-      color: #7b9196;
+      color: #DA220B;
     }
 
     h2 {
@@ -55,7 +55,7 @@
       font-size: 21px;
       text-align: center;
       margin: 0 0 10px;
-      color:#666;
+      color:#fff;
       line-height:1.25em;
     }
 
@@ -69,13 +69,13 @@
     h4 {
       font-weight: bold;
       font-size: 16px;
-      color: #7d9093;
+      color: #DA220B;
       margin: 0 0 6px;
     }
 
     h5 {
       font-size: 13px;
-      color: #666;
+      color: #fff;
       text-transform: uppercase;
       margin: 0 0 4px;
     }
@@ -85,7 +85,7 @@
       font-weight: 400;
       font-size: 14px;
       margin: 0 0 6px;
-      color: #a3a3a3;
+      color: #fff;
     }
 
     p {
@@ -124,7 +124,6 @@
     /* Header Styles */
     /* //////////////////////////////////// */
     .email-header{
-      text-align:center;
       margin:15px 0 5px;
     }
 
@@ -167,24 +166,91 @@
       width:100%;
       height:5px;
       margin:0 auto;
-      border-top:solid 20px #fff;
-      border-bottom:solid 20px #fff;
+      border-top:solid 20px #333;
+      border-bottom:solid 20px #333;
     }
 
     .section-divider td {
       height:5px;
-      background-color:#f7f7f7;
+      background-color:#1B1B1B;
       line-height:5px;
     }
     .section-divider td.gutter{ width:0; }
 
-    .section-divider.blank { border-top:solid 5px #fff; border-bottom: 5px; }
+    .section-divider.blank { border-top:solid 5px #333; border-bottom: 5px; }
 
     .section-divider.dashed td,
-    .section-divider.blank td { background-color: #FFF; }
+    .section-divider.blank td { background-color: #333; }
 
     .section-divider.dashed div {
       border-bottom: dashed 2px #95242A;
+    }
+
+    /* Hero Content */
+    /* //////////////////////////////////// */
+    .hero-content .hero-image a { display: block; }
+
+    .hero-content {
+      display:inline-block;
+      text-align:center;
+      color:#666;
+      width: 100%;
+      margin: 0;
+    }
+
+
+    .hero-content .hero-headline { margin: 16px 0 8px 0; }
+
+    .hero-content .hero-headline h1 a { color: #DA220B; font-weight: bold; }
+
+    .hero-content .hero-headline h3 a {
+      color: #7b9196;
+      text-transform: uppercase;
+    }
+
+    .hero-image { margin: 0 0 8px; }
+
+    .hero-description {
+      margin: 0 0 18px;
+      text-align: center;
+    }
+
+
+    .hero-description p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.25;
+      color: #fff;
+      margin: 0 0 16px;
+    }
+
+    .hero-link { padding:15px 0 }
+
+    .hero-description p a {
+      color: #DE2000;
+      font-weight: bold;
+    }
+
+    /* Update Content */
+    /* //////////////////////////////////// */
+
+    .update {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    .update strong {
+      text-transform: uppercase;
+    }
+
+    .update a {
+      color: #DE2000;
+    }
+
+    .update h3 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 6px;
     }
 
     /* Element Styles */
@@ -192,7 +258,7 @@
 
     /* Content Block */
     .content-block{
-      color: #666;
+      color: #fff;
       width: 100%;
       line-height: 1.5;
       text-align: center;
@@ -261,11 +327,12 @@
     .section-header .text {
       width: 50%;
       font-weight: normal;
-      background: #FFF;
+      background: #333;
       padding: 5px 20px;
-      color: #909090;
+      color: #fff;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 12px;
+      font-weight: bold;
       letter-spacing: 1px;
     }
 
@@ -285,7 +352,7 @@
       font-size: 16px;
       font-weight: 300;
       line-height: 1.25;
-      color: #909090;
+      color: #fff;
       text-align: right;
       font-style: italic;
     }
@@ -341,7 +408,8 @@
     }
 
     .content-description a {
-      color: #555;
+      font-weight: bold;
+      color: #FFF;
       text-decoration: none;
     }
 
@@ -467,14 +535,14 @@
     .email-footer {
       text-align:center;
       font-size:10px;
-      color:#666;
+      color:#efefef;
       line-height:1.7em;
       padding:14px 0 40px;
     }
 
     .footer-text a {
       text-decoration: underline;
-      color: #7b9196;
+      color: #DE2000;
     }
 
     /* Responsive Media Queries */
@@ -491,28 +559,6 @@
         font-size: 14px !important;
       }
 
-      .hero-description p,
-      .large-text-block p {
-        font-size: 28px !important;
-      }
-
-      .email-header a img {
-        width: 295px !important;
-        height: 56px !important;
-      }
-
-      .hero-headline h1,
-      table[class="content-block"] .content-block-header h2 {
-        font-size: 36px !important;
-      }
-
-      table[class="content-block"] .col .content-description a {
-        font-size: 24px !important;
-      }
-
-      table[class="content-block"] .col .content-description p {
-        font-size: 21px !important;
-      }
     }
 
 

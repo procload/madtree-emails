@@ -1,4 +1,13 @@
 {
+  "hero_content" : {
+    "headline" : "All the things",
+    "image" : "http://placehold.it/600x300",
+    "url" : "",
+    "description" : "Morbi et accumsan felis. Nullam. Praesent et elit in lectus. Praesent a metus eu ex."
+  },
+  "section_header" : {
+    "text" : "Madtree News"
+  },
   "button" : {
     "text" : "Button",
     "url" : "",

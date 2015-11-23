@@ -1,0 +1,29 @@
+<%
+content = data.all_the_things
+
+button = content.button
+
+hero_content = content.hero_content
+headline = content.headline
+full_image = content.full_image
+section_header = content.section_header
+
+pullquote = content.pullquote
+paragraph = content.paragraph
+
+items_two = content.items_two
+items_three = content.items_three
+
+%>
+
+<%= partial "partials/styles" %>
+
+<%= partial "partials/preheader" %>
+<%= partial "partials/header" %>
+
+<%= partial "partials/hero", locals: { hc: hero_content } %>
+<%= partial "partials/section_header", locals: { section_header: section_header.text } %>
+<%= partial "partials/update", locals: { section_header: section_header.text } %>
+
+<%= partial "partials/divider" %>
+<%= partial "partials/footer" %>

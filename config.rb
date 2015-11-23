@@ -11,6 +11,7 @@ activate :kss, :kss_dir => 'stylesheets/modules',
 activate :livereload
 
 page "/styleguide/*", layout: "styleguide"
+page "/templates/*", layout: "template"
 
 # Helpers
 ###
